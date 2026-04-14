@@ -19,7 +19,7 @@ This project simulates a **Hadoop-like distributed computing system** using Dock
 
 ## 🏗️ System Architecture
 
-![Architecture](architecture.PNG)
+![Architecture](architecture.png)
 
 ---
 
