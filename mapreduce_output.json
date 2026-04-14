@@ -1,0 +1,29 @@
+{
+  "elapsed_seconds": 1.02,
+  "full_results_saved_to": "/data/output.json",
+  "status": "success",
+  "top_20_words": {
+    "africa": 9212,
+    "americas": 8648,
+    "and": 1316,
+    "asia": 1880,
+    "australia": 1504,
+    "canada": 2256,
+    "china": 6204,
+    "east": 1880,
+    "eastern": 4136,
+    "europe": 15040,
+    "france": 2068,
+    "guinea": 752,
+    "kingdom": 2068,
+    "mediterranean": 4136,
+    "netherlands": 752,
+    "pacific": 10340,
+    "saint": 564,
+    "south": 2444,
+    "united": 2256,
+    "western": 10528
+  },
+  "total_unique_words": 226,
+  "workers_used": 3
+}

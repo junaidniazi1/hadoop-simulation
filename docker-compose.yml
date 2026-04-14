@@ -1,0 +1,47 @@
+services:
+  master:
+    build:
+      context: ./master
+    container_name: master_node
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./data:/data
+    networks:
+      hadoop_net:
+        ipv4_address: 172.20.0.2
+    depends_on:
+      - worker1
+      - worker2
+      - worker3
+
+  worker1:
+    build:
+      context: ./worker
+    container_name: worker_node_1
+    networks:
+      hadoop_net:
+        ipv4_address: 172.20.0.3
+
+  worker2:
+    build:
+      context: ./worker
+    container_name: worker_node_2
+    networks:
+      hadoop_net:
+        ipv4_address: 172.20.0.4
+
+  worker3:
+    build:
+      context: ./worker
+    container_name: worker_node_3
+    networks:
+      hadoop_net:
+        ipv4_address: 172.20.0.5
+
+networks:
+  hadoop_net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
